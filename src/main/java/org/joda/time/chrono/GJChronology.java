@@ -170,7 +170,7 @@ public final class GJChronology extends AssembledChronology {
             DateTimeZone zone,
             ReadableInstant gregorianCutover) {
 
-        return getInstance(zone, gregorianCutover, 10);
+        return getInstance(zone, gregorianCutover, 4);
     }
 
     /**
