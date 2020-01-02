@@ -38,7 +38,6 @@ import org.joda.time.format.ISODateTimeFormat;
 /**
  * Implements the Gregorian/Julian calendar system which is the calendar system
  * used in most of the world. Wherever possible, it is recommended to use the
- * {@link ISOChronology} instead.
  * <p>
  * The Gregorian calendar replaced the Julian calendar, and the point in time
  * when this chronology switches can be controlled using the second parameter
@@ -171,7 +170,7 @@ public final class GJChronology extends AssembledChronology {
             DateTimeZone zone,
             ReadableInstant gregorianCutover) {
 
-        return getInstance(zone, gregorianCutover, 4);
+        return getInstance(zone, gregorianCutover, 10);
     }
 
     /**
